@@ -267,17 +267,6 @@ const FinalProject = () => {
             </div>
             
             <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-6">App Home Page</h3>
-              <div className="flex justify-center">
-                <img 
-                  src="/lovable-uploads/95524540-f99e-4830-8dc8-4f8df583ae9e.png" 
-                  alt="College Cents Home Page" 
-                  className="rounded-lg shadow-md max-h-[600px] object-contain border border-gray-200"
-                />
-              </div>
-            </div>
-            
-            <div className="mt-12">
               <h3 className="text-xl font-semibold mb-6">Development Process</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <Card className="project-card">
