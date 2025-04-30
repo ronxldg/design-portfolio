@@ -81,10 +81,10 @@ const FinalProject = () => {
                   <div className="flex items-center space-x-3">
                     <Link className="h-5 w-5 text-primary" />
                     <a 
-                      href="https://www.figma.com/proto/oYETuTBt0jfTaNK5Seo54z/CS-6460-Final-Project-Final-Prototype?node-id=6-210&p=f&t=AG3cn4gGLPm54Fni-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A210" 
-                      className="text-primary hover:underline"
+                      href="https://www.figma.com/proto/oYETuTBt0jfTaNK5Seo54z/…"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="flex items-center space-x-3 text-primary hover:underline"
                     >
                       Final Prototype (Present Mode)
                     </a>
