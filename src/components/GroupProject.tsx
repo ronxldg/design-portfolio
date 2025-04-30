@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -60,11 +61,27 @@ const GroupProject = () => {
               </div>
               
               <div className="flex justify-center items-center">
-                <img 
-                  src="/lovable-uploads/e54eaf29-d99a-43e2-b001-98494855eae5.png" 
-                  alt="Design Challenges" 
-                  className="rounded-lg shadow-md max-h-80 object-contain"
-                />
+                <figure className="text-center">
+                  <img 
+                    src="/lovable-uploads/e54eaf29-d99a-43e2-b001-98494855eae5.png" 
+                    alt="Project Affinity Diagram" 
+                    className="rounded-lg shadow-md max-h-80 object-contain"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2">Affinity Diagram for Key Features</figcaption>
+                </figure>
+              </div>
+            </div>
+            
+            <div className="mt-10">
+              <div className="flex justify-center mb-8">
+                <figure className="text-center">
+                  <img 
+                    src="/lovable-uploads/8114c21b-fcee-4f99-ae67-eb402a2fa993.png" 
+                    alt="Anki Redesign Home Screen" 
+                    className="rounded-lg shadow-md max-h-96 object-contain border border-gray-100"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2">Anki Redesign Home Screen</figcaption>
+                </figure>
               </div>
             </div>
             
@@ -102,11 +119,14 @@ const GroupProject = () => {
                       </ul>
                     </div>
                     <div className="flex justify-center items-center">
-                      <img 
-                        src="/lovable-uploads/9361d9c7-48db-4cc7-b805-0b5b06741038.png" 
-                        alt="Analytics Feature" 
-                        className="rounded-lg shadow-md max-h-80 object-contain"
-                      />
+                      <figure className="text-center">
+                        <img 
+                          src="/lovable-uploads/9f8507df-84f2-4de0-8c52-bdf094205a16.png" 
+                          alt="Analytics Feature" 
+                          className="rounded-lg shadow-md max-h-96 object-contain"
+                        />
+                        <figcaption className="text-sm text-muted-foreground mt-2">AI-Powered Study Analytics Interface</figcaption>
+                      </figure>
                     </div>
                   </div>
                 </TabsContent>
