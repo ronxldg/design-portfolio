@@ -81,7 +81,7 @@ const FinalProject = () => {
                   <div className="flex items-center space-x-3">
                     <Link className="h-5 w-5 text-primary" />
                     <a 
-                      href="#" 
+                      href="https://www.figma.com/proto/oYETuTBt0jfTaNK5Seo54z/CS-6460-Final-Project-Final-Prototype?node-id=6-210&p=f&t=AG3cn4gGLPm54Fni-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A210" 
                       className="text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -93,12 +93,12 @@ const FinalProject = () => {
                   <div className="flex items-center space-x-3">
                     <Link className="h-5 w-5 text-primary" />
                     <a 
-                      href="#" 
+                      href="https://www.figma.com/proto/YV5pXEiywNPxagwEJzBs9T/CS-6460-Final-Project---Personal-Finance-Tool-for-College-Students?node-id=6-210&starting-point-node-id=6%3A210&t=gKZ3zdir72mQkPmc-1" 
                       className="text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Final Prototype (Figma File)
+                      Previous Prototype
                     </a>
                   </div>
                   
@@ -264,6 +264,17 @@ const FinalProject = () => {
                   </div>
                 </TabsContent>
               </Tabs>
+            </div>
+            
+            <div className="mt-12">
+              <h3 className="text-xl font-semibold mb-6">App Home Page</h3>
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/95524540-f99e-4830-8dc8-4f8df583ae9e.png" 
+                  alt="College Cents Home Page" 
+                  className="rounded-lg shadow-md max-h-[600px] object-contain border border-gray-200"
+                />
+              </div>
             </div>
             
             <div className="mt-12">
