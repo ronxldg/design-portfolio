@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,7 +22,7 @@ const GroupProject = () => {
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-2xl">Figma Redesign Project</CardTitle>
+            <CardTitle className="text-2xl">Anki Redesign Project</CardTitle>
             <CardDescription>
               <a 
                 href="https://www.figma.com/proto/21h5fGXnvhJBbGaxlf3EDX/Figma-0---Motivation-19?node-id=0-1&t=ACgJsKxDOI4BqN0t-1" 
@@ -168,13 +167,6 @@ const GroupProject = () => {
               </Tabs>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center pt-6">
-            <img 
-              src="/lovable-uploads/16418ff5-8c8b-4475-a7a9-0e92f15fb9d2.png" 
-              alt="Analytics Dashboard" 
-              className="rounded-lg shadow-md max-h-96 object-contain"
-            />
-          </CardFooter>
         </Card>
       </div>
     </section>

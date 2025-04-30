@@ -12,7 +12,7 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">CS 6460</span> Portfolio
+            <span className="gradient-text">Design</span> Portfolio
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Educational Technology projects showcasing innovative solutions for learning challenges

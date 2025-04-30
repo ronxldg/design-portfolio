@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link, FileVideo, UserCheck } from 'lucide-react';
 
 const FinalProject = () => {
   return (
@@ -21,186 +22,317 @@ const FinalProject = () => {
           </p>
         </motion.div>
 
-        <Card>
+        <Card className="mb-12">
           <CardHeader>
-            <CardTitle className="text-2xl">User Testing & Prototype Development</CardTitle>
+            <CardTitle className="text-2xl">College Cents: Personal Finance Learning App</CardTitle>
             <CardDescription>
-              Research, testing, and implementation of educational technology solutions
+              An educational app helping college students master personal finance skills
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
               <Card className="col-span-1 project-card">
                 <CardHeader>
-                  <CardTitle className="text-lg">User Testing Methodology</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    I conducted comprehensive user tests with 5 medical students preparing for their MCAT exams. The testing 
-                    focused on how they interact with existing flashcard applications and their specific pain points.
-                  </p>
-                  <div className="mt-4">
-                    <h4 className="font-medium">Testing Process:</h4>
-                    <ul className="list-disc pl-5 mt-2 space-y-1">
-                      <li>Think-aloud protocol during app usage</li>
-                      <li>Semi-structured interviews</li>
-                      <li>Task completion scenarios</li>
-                      <li>Observation of study habits</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="col-span-1 project-card">
-                <CardHeader>
-                  <CardTitle className="text-lg">Initial Prototype & Sketches</CardTitle>
+                  <CardTitle className="text-lg">Project Overview</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Based on initial research, I created low-fidelity wireframes focusing on the analytics dashboard. Early 
-                    sketches emphasized data visualization and actionable insights rather than complex statistics.
+                    College Cents is a mobile-friendly interactive web app designed to teach college students 
+                    (ages 18-24) the basics of personal finance, including budgeting, saving, and understanding credit.
                   </p>
-                  <p className="text-muted-foreground">
-                    The prototype evolved through several iterations, with the core innovation being the AI-powered insights 
-                    that translate raw study data into concrete recommendations for users.
+                  <p className="text-muted-foreground mb-4">
+                    The app features two main components: a Budget Builder for guided monthly budgeting and a Learn Mode 
+                    offering modules on credit, taxes, investments, insurance, and more.
                   </p>
+                  <div className="mt-4">
+                    <h4 className="font-medium">Learning Outcomes:</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Build and manage a simple monthly budget tailored to college lifestyle</li>
+                      <li>Develop financial literacy across core personal finance concepts</li>
+                    </ul>
+                  </div>
                 </CardContent>
               </Card>
               
               <Card className="col-span-1 project-card">
                 <CardHeader>
-                  <CardTitle className="text-lg">Key User Test Insights</CardTitle>
+                  <CardTitle className="text-lg">Initial Design</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <span className="text-primary font-bold mr-2">→</span>
-                      <p className="text-muted-foreground">Users struggled to extract actionable insights from raw statistics</p>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary font-bold mr-2">→</span>
-                      <p className="text-muted-foreground">Study sessions lacked focus on weak areas</p>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary font-bold mr-2">→</span>
-                      <p className="text-muted-foreground">Difficulty prioritizing which cards needed more attention</p>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary font-bold mr-2">→</span>
-                      <p className="text-muted-foreground">Overwhelmed by large decks without clear subdivision</p>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary font-bold mr-2">→</span>
-                      <p className="text-muted-foreground">Wanted direct paths to challenging content</p>
-                    </li>
-                  </ul>
+                  <p className="text-muted-foreground mb-4">
+                    The initial design was inspired by popular apps like Mint, Duolingo, Headspace, and Quizlet,
+                    focusing on a clean interface, gamification elements, and bite-sized learning modules.
+                  </p>
+                  <div className="flex justify-center mt-6">
+                    <img 
+                      src="/lovable-uploads/bacfc2c9-f744-4b05-b9be-77d19b6138f8.png" 
+                      alt="Initial Sketch" 
+                      className="rounded-lg shadow-md max-h-80 object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="col-span-1 project-card">
+                <CardHeader>
+                  <CardTitle className="text-lg">Prototype Links</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Link className="h-5 w-5 text-primary" />
+                    <a 
+                      href="#" 
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Final Prototype (Present Mode)
+                    </a>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Link className="h-5 w-5 text-primary" />
+                    <a 
+                      href="#" 
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Final Prototype (Figma File)
+                    </a>
+                  </div>
+                  
+                  <div className="pt-4">
+                    <h4 className="font-medium mb-3">User Test Videos:</h4>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-3">
+                        <FileVideo className="h-5 w-5 text-primary" />
+                        <a 
+                          href="https://drive.google.com/file/d/1dwVBhFl5ZQQg0XiQXGvnoD0CyRIA0yMs/view?usp=sharing" 
+                          className="text-primary hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          User Test 1 (Aabid)
+                        </a>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3">
+                        <FileVideo className="h-5 w-5 text-primary" />
+                        <a 
+                          href="https://drive.google.com/file/d/1Gmc5olPrum-uV6ecWVNRyP9xQbcxiz_o/view?usp=sharing" 
+                          className="text-primary hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          User Test 2 (Samuel)
+                        </a>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3">
+                        <FileVideo className="h-5 w-5 text-primary" />
+                        <a 
+                          href="https://drive.google.com/file/d/1TkwUdXgD2WQI-OMcr7aHbu9Y_evmA4Eb/view?usp=sharing" 
+                          className="text-primary hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          User Test 3 (Pranav)
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
             
-            <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-6">Implementation of User Test Insights</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-                <div className="space-y-4">
-                  <div className="rounded-lg bg-muted p-4">
-                    <h4 className="font-medium mb-2">Insight: Difficulty extracting meaningful data</h4>
-                    <p className="text-sm text-muted-foreground">Users reported feeling overwhelmed by Anki's statistics, unable to determine what to focus on.</p>
-                    <div className="mt-3 pt-3 border-t border-border">
-                      <p className="text-sm font-medium">Implementation:</p>
-                      <p className="text-sm text-muted-foreground">Created AI-powered analytics that automatically identify problem areas and provide clear, actionable recommendations.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="rounded-lg bg-muted p-4">
-                    <h4 className="font-medium mb-2">Insight: Need for targeted study sessions</h4>
-                    <p className="text-sm text-muted-foreground">Users wanted to focus on specific weak areas but found it difficult to isolate those cards.</p>
-                    <div className="mt-3 pt-3 border-t border-border">
-                      <p className="text-sm font-medium">Implementation:</p>
-                      <p className="text-sm text-muted-foreground">Added one-click access to create focused study sessions for problematic topics, with direct "Study/Review" buttons for targeted review.</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="mt-10">
+              <h3 className="text-xl font-semibold mb-6">User Test Insights</h3>
+              <Tabs defaultValue="user1" className="w-full">
+                <TabsList className="grid grid-cols-1 md:grid-cols-4 mb-6">
+                  <TabsTrigger value="user1">User 1 (Aabid)</TabsTrigger>
+                  <TabsTrigger value="user2">User 2 (Samuel)</TabsTrigger>
+                  <TabsTrigger value="user3">User 3 (Pranav)</TabsTrigger>
+                  <TabsTrigger value="ta">TA Feedback</TabsTrigger>
+                </TabsList>
                 
-                <div className="space-y-4">
-                  <div className="rounded-lg bg-muted p-4">
-                    <h4 className="font-medium mb-2">Insight: Visual representation of progress</h4>
-                    <p className="text-sm text-muted-foreground">Users expressed desire for clearer visual indicators of progress and problem areas.</p>
-                    <div className="mt-3 pt-3 border-t border-border">
-                      <p className="text-sm font-medium">Implementation:</p>
-                      <p className="text-sm text-muted-foreground">Designed comprehensive dashboard with retention rates by subject area and clear visualization of performance metrics.</p>
+                <TabsContent value="user1" className="border rounded-lg p-6">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="md:w-1/2">
+                      <h3 className="text-xl font-semibold mb-4">User Test 1: Aabid</h3>
+                      <p className="text-muted-foreground mb-4">
+                        When Aabid dug into the Budget Builder feature, he liked seeing the monthly breakdown but didn't understand 
+                        why it defaulted to a 50/30/20 split. He also wanted to be able to tweak those numbers and see the impact immediately.
+                      </p>
+                    </div>
+                    <div className="md:w-1/2">
+                      <h4 className="font-medium mb-3">Implementation Changes:</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Adding a three-step coaching overlay ("Pay Yourself First," "Cover Essentials," "Fun Money") before the budget table</li>
+                        <li>Implementing budget analysis for feedback-based learning</li>
+                        <li>Adding budget editing functionality</li>
+                        <li>Adding bank account connection option</li>
+                        <li>Improving clarity of insights and recommendations</li>
+                      </ul>
+                      <div className="mt-4">
+                        <p className="text-sm text-muted-foreground italic">
+                          These changes will better support kinesthetic learners who "learn by doing."
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className="rounded-lg bg-muted p-4">
-                    <h4 className="font-medium mb-2">Insight: Need for specific recommendations</h4>
-                    <p className="text-sm text-muted-foreground">Users wanted specific advice on how to improve, not just data on what was wrong.</p>
-                    <div className="mt-3 pt-3 border-t border-border">
-                      <p className="text-sm font-medium">Implementation:</p>
-                      <p className="text-sm text-muted-foreground">Added "Actionable Fixes" section with specific techniques tailored to each user's learning patterns and problem areas.</p>
+                </TabsContent>
+                
+                <TabsContent value="user2" className="border rounded-lg p-6">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="md:w-1/2">
+                      <h3 className="text-xl font-semibold mb-4">User Test 2: Samuel</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Samuel found the Insights/Recommendations panel too cramped and pointed out that True/False and 
+                        single-answer quizzes still used multi-select checkboxes, creating confusion.
+                      </p>
+                    </div>
+                    <div className="md:w-1/2">
+                      <h4 className="font-medium mb-3">Implementation Changes:</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Reorganizing insights panel into clear left/right columns under the budget table</li>
+                        <li>Increasing font size throughout the app</li>
+                        <li>Adding more white space to improve readability</li>
+                        <li>Replacing checkboxes with radio buttons for single-answer questions</li>
+                      </ul>
+                      <div className="mt-4">
+                        <p className="text-sm text-muted-foreground italic">
+                          These changes will improve the overall user experience and reduce confusion.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </TabsContent>
+                
+                <TabsContent value="user3" className="border rounded-lg p-6">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="md:w-1/2">
+                      <h3 className="text-xl font-semibold mb-4">User Test 3: Pranav</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Pranav liked the color cues but didn't know what red, blue, and green meant, and he wanted 
+                        clearer labels for progress on the modules as well as the "3-Day Streak" gamification.
+                      </p>
+                    </div>
+                    <div className="md:w-1/2">
+                      <h4 className="font-medium mb-3">Implementation Changes:</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Making color cues more explicit with clear legends</li>
+                        <li>Adding clear labels to the streak banner before Learn Mode</li>
+                        <li>Improving module progress bar labeling</li>
+                        <li>Consistently increasing padding and type size across all screens</li>
+                      </ul>
+                      <div className="mt-4">
+                        <p className="text-sm text-muted-foreground italic">
+                          These changes will make every screen feel spacious and self-explanatory.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
+                
+                <TabsContent value="ta" className="border rounded-lg p-6">
+                  <div className="flex flex-col md:flex-row gap-8">
+                    <div className="md:w-1/2">
+                      <h3 className="text-xl font-semibold mb-4">TA Feedback</h3>
+                      <p className="text-muted-foreground mb-4">
+                        The TA reminded me that Learn Mode needs actual teaching content, not just quizzes.
+                        This feedback emphasized the need for structured educational content.
+                      </p>
+                    </div>
+                    <div className="md:w-1/2">
+                      <h4 className="font-medium mb-3">Implementation Changes:</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Adding 1-3 minute mini-lesson videos to each module</li>
+                        <li>Including text and visual walkthroughs that break concepts into bite-sized segments</li>
+                        <li>Implementing "Try It Yourself" quiz questions based on taught content</li>
+                        <li>Adding instant correctness feedback</li>
+                        <li>Including recaps that reinforce key takeaways</li>
+                      </ul>
+                      <div className="mt-4">
+                        <p className="text-sm text-muted-foreground italic">
+                          These changes will target both auditory and visual learners while applying learning science 
+                          principles like segmenting complex content into short chunks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
+              </Tabs>
             </div>
             
             <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-6">Final Prototype & Resources</h3>
+              <h3 className="text-xl font-semibold mb-6">Development Process</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <Card className="project-card">
                   <CardHeader>
-                    <CardTitle className="text-lg">Final Prototype</CardTitle>
+                    <CardTitle className="text-lg">Target Audience</CardTitle>
                   </CardHeader>
                   <CardContent>
+                    <div className="flex space-x-2 mb-4">
+                      <UserCheck className="h-5 w-5 text-primary mt-1" />
+                      <div>
+                        <p className="text-muted-foreground">
+                          College students (age 18-24) who need to learn personal finance basics like budgeting, 
+                          saving, and understanding credit.
+                        </p>
+                      </div>
+                    </div>
+                    
                     <p className="text-muted-foreground mb-4">
-                      The final prototype incorporates all user feedback with a focus on the analytics dashboard that provides 
-                      clear, actionable insights derived from study data. The interface prioritizes:
+                      I chose this demographic because many college students lack proper financial education 
+                      despite making significant financial decisions during this period of their lives.
                     </p>
-                    <ul className="list-disc pl-5 space-y-1 mb-5">
-                      <li>Clear visualization of performance metrics</li>
-                      <li>Subject-specific retention rates</li>
-                      <li>Direct links to problematic topic sets</li>
-                      <li>Specific recommendations for improving study methods</li>
-                    </ul>
-                    <div className="flex justify-center mt-4">
-                      <a 
-                        href="https://www.figma.com/proto/21h5fGXnvhJBbGaxlf3EDX/Figma-0---Motivation-19?node-id=0-1&t=ACgJsKxDOI4BqN0t-1" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors inline-flex items-center"
-                      >
-                        View Final Prototype
-                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </a>
+                    
+                    <div className="mt-4">
+                      <h4 className="font-medium mb-2">Early User Feedback:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li><span className="font-medium">Aabid (22, M, recent graduate):</span> Emphasized need for realism in budget simulation</li>
+                        <li><span className="font-medium">Emily (20, F, sophomore):</span> Suggested adding brief recaps after lessons</li>
+                        <li><span className="font-medium">Shreyas (19, M, freshman):</span> Valued conversational language and positive reinforcement</li>
+                      </ul>
                     </div>
                   </CardContent>
                 </Card>
                 
                 <Card className="project-card">
                   <CardHeader>
-                    <CardTitle className="text-lg">User Test Documentation</CardTitle>
+                    <CardTitle className="text-lg">Design Inspirations</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">
-                      Comprehensive user testing was conducted with medical students preparing for their MCAT exams. The focus was on 
-                      understanding their current study methods, pain points, and how they interacted with the prototype.
-                    </p>
-                    <p className="text-muted-foreground mb-6">
-                      User feedback was overwhelmingly positive regarding the AI-powered analytics, with test participants expressing 
-                      particular enthusiasm for the clear actionable insights rather than raw statistics.
-                    </p>
-                    <div className="flex justify-center mt-4">
-                      <a 
-                        href="#"
-                        className="px-4 py-2 bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/90 transition-colors inline-flex items-center"
-                      >
-                        View User Test Videos
-                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </a>
+                    <ul className="space-y-4">
+                      <li>
+                        <div className="font-medium mb-1">Mint</div>
+                        <p className="text-sm text-muted-foreground">Clear financial dashboard layout to help easily visualize and track budgets/expenses</p>
+                      </li>
+                      <li>
+                        <div className="font-medium mb-1">Duolingo</div>
+                        <p className="text-sm text-muted-foreground">Gamification elements like streak tracking to make learning rewarding</p>
+                      </li>
+                      <li>
+                        <div className="font-medium mb-1">Headspace</div>
+                        <p className="text-sm text-muted-foreground">Clean, calming UI and friendly voice to reduce financial anxiety</p>
+                      </li>
+                      <li>
+                        <div className="font-medium mb-1">Quizlet Learn Mode</div>
+                        <p className="text-sm text-muted-foreground">Short, adaptive lesson format for teaching financial literacy</p>
+                      </li>
+                    </ul>
+                    
+                    <div className="mt-6">
+                      <h4 className="font-medium mb-2">Learning Science Principles:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Segmenting Principle: Short, digestible modules</li>
+                        <li>Modality Principle: Mixed visual and auditory content</li>
+                        <li>Feedback Principle: Instant, personalized guidance</li>
+                        <li>Self-Directed Learning: Progress dashboards and choice-based pathways</li>
+                        <li>Motivation through autonomy, competence, and social connection</li>
+                      </ul>
                     </div>
                   </CardContent>
                 </Card>

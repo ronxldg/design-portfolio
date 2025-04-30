@@ -14,7 +14,7 @@ const Header = () => {
           className="flex items-center mb-4 md:mb-0"
         >
           <h1 className="text-2xl font-bold text-primary">
-            Ronald George <span className="text-sm font-normal text-muted-foreground">| Educational Tech Portfolio</span>
+            Ronald George <span className="text-sm font-normal text-muted-foreground">| Design Portfolio</span>
           </h1>
         </motion.div>
         
