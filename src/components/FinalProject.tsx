@@ -73,7 +73,7 @@ const FinalProject = () => {
                 </CardContent>
               </Card>
               
-              <Card className="col-span-1 project-card">
+              <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Prototype Links</CardTitle>
                 </CardHeader>
@@ -86,7 +86,7 @@ const FinalProject = () => {
                       rel="noopener noreferrer"
                       className="flex items-center space-x-3 text-primary hover:underline"
                     >
-                      Final Prototype (Present Mode)
+                      Final Prototype
                     </a>
                   </div>
                   
@@ -98,7 +98,7 @@ const FinalProject = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Previous Prototype
+                      Prototype 1
                     </a>
                   </div>
                   
